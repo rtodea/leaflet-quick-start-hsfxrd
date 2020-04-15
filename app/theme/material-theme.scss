@@ -1,0 +1,64 @@
+@import './material-styles.scss';
+@import './material-snacker.scss';
+
+/*-- Properties --*/
+$green: mat-palette($mat-green, A400);
+$blue: mat-palette($mat-light-blue, A400);
+$red: mat-palette($mat-red);
+$indigo: mat-palette($mat-indigo, A400);
+$deep-orange: mat-palette($mat-deep-orange, A200);
+$red-warn: mat-palette($mat-red, A100);
+
+/*-- Global Styling --*/
+$default-theme: mat-light-theme($green, $blue);
+@include style-theme($default-theme);
+@include angular-material-theme($default-theme);
+
+/*-- Theming --*/
+.light-green {
+    $default-theme: mat-light-theme($green, $blue);
+    @include style-theme($default-theme);
+    @include angular-material-theme($default-theme);
+}
+
+.dark-green {
+    $default-theme: mat-dark-theme($green, $blue);
+    @include style-theme($default-theme);
+    @include angular-material-theme($default-theme);
+}
+
+.light-red {
+    $default-theme: mat-light-theme($red, $blue, $red-warn);
+    @include style-theme($default-theme);
+    @include angular-material-theme($default-theme);
+}
+
+.dark-red {
+    $default-theme: mat-dark-theme($red, $blue, $red-warn);
+    @include style-theme($default-theme);
+    @include angular-material-theme($default-theme);
+}
+
+.light-blue {
+    $default-theme: mat-light-theme($blue, $green);
+    @include style-theme($default-theme);
+    @include angular-material-theme($default-theme);
+}
+
+.dark-blue {
+    $default-theme: mat-dark-theme($blue, $green);
+    @include style-theme($default-theme);
+    @include angular-material-theme($default-theme);
+}
+
+.light-indigo {
+  $default-theme: mat-light-theme($indigo, $deep-orange);
+  @include style-theme($default-theme);
+  @include angular-material-theme($default-theme);
+}
+
+.dark-indigo {
+  $default-theme: mat-dark-theme($indigo, $deep-orange);
+  @include style-theme($default-theme);
+  @include angular-material-theme($default-theme);
+}

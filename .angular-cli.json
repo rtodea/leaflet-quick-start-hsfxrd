@@ -1,0 +1,5 @@
+{
+  "apps": [{
+    "styles": ["app/theme/material-theme.scss"]
+  }]
+}
